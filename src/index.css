@@ -1,13 +1,91 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(238, 244, 247);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(43, 44, 44);
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.cards-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0 50px;
+}
+.card{
+  width: 300px;
+  min-height: 300px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.527) ;
+}
+.img{
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+.card h2, p{
+  padding: 0px 10px ;
+}
+.like{
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 118px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.527) ;
+  cursor: pointer;
+}
+.btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(42, 44, 44);
+  color: white;
+  cursor: pointer;
+}
+.buttons-div{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  font-size: 40px;
+}
+input{
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid gray;
+  width:230px;
 }
